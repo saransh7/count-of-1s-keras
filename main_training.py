@@ -1,6 +1,7 @@
 
 
 if __name__ == "__main__":
+    import time
     import datetime
     from utils.train_util import *
 

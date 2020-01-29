@@ -18,8 +18,8 @@ loss = 'categorical_crossentropy'
 metrics = ['acc']
 
 model_folder = r'./model_archive'
-model_name = 'count_of_1s_' + str(c.str_len) + '.h5'
-model_path = os.path.join(c.model_path, model_name)
+model_name = 'count_of_1s_' + str(str_len) + '.h5'
+model_path = os.path.join(model_folder, model_name)
 
 # loss plot
 plot_loss = False
