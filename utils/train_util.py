@@ -20,7 +20,7 @@ def process_string(string):
     temp_list = []
     for char in string:
         temp_list.append([int(char)])
-    return temp_list
+    return np.array(temp_list)
 
 
 def create_x():
@@ -30,7 +30,7 @@ def create_x():
     #train_input = [map(int, i) for i in train_input]
     ti = []
     for i in train_input:
-        ti.append(np.array(process_string(i)))
+        ti.append(process_string(i))
     train_input = ti
     return np.array(train_input)
 
